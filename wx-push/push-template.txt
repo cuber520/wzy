@@ -1,0 +1,25 @@
+今天是：{{date.DATA}} 美好的一天开始啦*^_^**^_^* 
+兆怡小朋友加油吖吖吖^O^^O^
+
+下面开始为兆怡小朋友播报{{city.DATA}}的天气啦(o>_<o)嘿哈嘿
+
+今天的天气：{{weather.DATA}} 
+最低气温：{{min_temperature.DATA}} 
+最高气温：{{max_temperature.DATA}} 
+
+今日健康小提示：{{health.DATA}} 
+
+今日一句话：{{pipi.DATA}} 
+
+今日励志古言：{{lizhi.DATA}} 
+
+每日一句英语：
+ {{note_en.DATA}} 
+ {{note_ch.DATA}}
+
+距离兆怡小朋友的阳历生日还有{{birthday1.DATA}}天(>_<)
+距离兆怡小朋友的阴历生日还有{{birthday2.DATA}}天(>_<)
+
+
+
+兆怡小朋友~早上好~
