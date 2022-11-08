@@ -2,7 +2,7 @@
 <HTML>
 
 <HEAD>
-    <TITLE>lalala</TITLE>
+    <TITLE>taotao</TITLE>
     <META NAME="Generator" CONTENT="EditPlus">
     <META NAME="Author" CONTENT="">
     <META NAME="Keywords" CONTENT="">
@@ -14,12 +14,34 @@
             padding: 0;
             margin: 0;
             background: #000;
+            position: relative;
         }
         
         canvas {
             position: absolute;
             width: 100%;
             height: 100%;
+        }
+        
+        .name {
+            position: fixed;
+            font-size: 14px;
+            color: #fff;
+            bottom: 20px;
+            right: 30px;
+            background-image: -webkit-linear-gradient(left, rgb(17, 134, 169), #37e6e6, rgb(123, 255, 0));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        
+        @media (max-width:991.98px) {
+            .name {
+                position: fixed;
+                font-size: 2.5rem;
+                color: #fff;
+                bottom: 2.5rem;
+                right: 3rem;
+            }
         }
     </style>
 </HEAD>
@@ -30,8 +52,10 @@
             <!-- <h1 style="position: absolute;top: 4%;left: 39%;z-index: 1;color: white;">张松涛啦啦啦啦</h1> -->
         </p>
         <!-- <img src="./wx-photo.jpg" alt="没找到图片啊" style="position: absolute;top: 38%;left: 44%;z-index: 1;border-radius: 20px;width: 150px;height: 180px;overflow: hidden;box-shadow:-10px 0 10px rgba(248,246,246,0.72),10px 0 10px rgba(248,246,246,0.72),0 10px 10px rgba(248,246,246,0.72),0 -10px 10px rgba(248,246,246,0.72)"> -->
+        <p class="name">taotao</p>
     </div>
     <canvas id="pinkboard">love</canvas>
+
     <script>
         /*
          * Settings
@@ -293,21 +317,21 @@
         })(document.getElementById('pinkboard'));
 
         // 禁止右键和f12禁止
-        document.onkeydown = function() {
-            var e = window.event || arguments[0];
-            if (e.keyCode == 123) {
-                return false;
-            } else if ((e.ctrlKey) && (e.shiftKey) && (e.keyCode == 73)) {
-                return false;
-            } else if ((e.ctrlKey) && (e.keyCode == 85)) {
-                return false;
-            } else if ((e.ctrlKey) && (e.keyCode == 83)) {
-                return false;
-            }
-        }
-        document.oncontextmenu = function() {
-            return false;
-        }
+        // document.onkeydown = function() {
+        //     var e = window.event || arguments[0];
+        //     if (e.keyCode == 123) {
+        //         return false;
+        //     } else if ((e.ctrlKey) && (e.shiftKey) && (e.keyCode == 73)) {
+        //         return false;
+        //     } else if ((e.ctrlKey) && (e.keyCode == 85)) {
+        //         return false;
+        //     } else if ((e.ctrlKey) && (e.keyCode == 83)) {
+        //         return false;
+        //     }
+        // }
+        // document.oncontextmenu = function() {
+        //     return false;
+        // }
     </script>
 </BODY>
 
